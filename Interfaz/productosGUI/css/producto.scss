@@ -1,0 +1,307 @@
+@import url('../../../estilos.css');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bg {
+  background-image: url("../../img/fondo_tecmu_azul.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.contenedor {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  overflow: hidden;
+  height: 80%;
+  overflow-y: auto;
+}
+.product{
+  background-color: #005d92ed;
+  border-radius: 40px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 20px rgb(0 0 0);
+  max-height: 470px;
+  width: 99%;
+  color: white;
+}
+.product__price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0dff00;
+  margin: 10px 0;
+}
+.product__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.product__title{
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffd300;
+  margin: 10px 0;
+}
+.product__btn {
+  background-color: var(--color-secundario);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 50%;
+  text-decoration: none;
+}
+.product__btn:hover {
+  background-color: #f5d006d4;
+  color: black;
+  text-decoration: none;
+}
+p{
+  overflow: hidden;
+  overflow-y: auto;
+}
+.div_filtrado{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  color: #fff;
+  background-color: var(--color-secundario);
+  border-radius: 16px;
+}
+.div_filtrado select{
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+}
+/* Estilos para el formulario de calificaciÃ³n */
+#formulario-calificacion {
+  width: fit-content;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  border-radius: 14px;
+}
+
+#formulario-calificacion h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#formulario-calificacion textarea {
+  width: 100%;
+  height: 100px;
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#formulario-calificacion button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos para las estrellas de calificaciÃ³n */
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  font-size: 30px;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label {
+  color: #ffcc00;
+}
+
+
+@media screen and (max-width: 600px){
+  header{
+    position: fixed;
+    transform: translate(10px, -135%);
+  }
+  .bg {
+    background-image: url("../../img/fondo_tecmu_azul.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .contenedor {
+    width: 99%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    overflow: hidden;
+    height: 70%;
+    overflow-y: auto;
+    transform: translate(0, 125px);
+  }
+  .product{
+    background-color: #005d92ed;
+    border-radius: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 20px rgb(0 0 0);
+    max-height: 470px;
+    width: 99%;
+    color: white;
+  }
+  .product__price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0dff00;
+    margin: 10px 0;
+  }
+  .product__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .product__title{
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffd300;
+    margin: 10px 0;
+  }
+  .product__btn {
+    background-color: var(--color-secundario);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 50%;
+    text-decoration: none;
+  }
+  .product__btn:hover {
+    background-color: #0056b3;
+  }
+  p{
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  .div_filtrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    color: #fff;
+    background-color: var(--color-secundario);
+    border-radius: 16px;
+  }
+  .div_filtrado select{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+  }
+  /* Estilos para el formulario de calificaciÃ³n */
+  #formulario-calificacion {
+    width: fit-content;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    border-radius: 14px;
+  }
+  
+  #formulario-calificacion h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  #formulario-calificacion textarea {
+    width: 100%;
+    height: 100px;
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #formulario-calificacion button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para las estrellas de calificaciÃ³n */
+  .rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rating input {
+    display: none;
+  }
+  
+  .rating label {
+    font-size: 30px;
+    color: #ddd;
+    cursor: pointer;
+  }
+  
+  .rating label:hover,
+  .rating label:hover ~ label,
+  .rating input:checked ~ label {
+    color: #ffcc00;
+  }
+}

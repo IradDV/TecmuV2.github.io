@@ -1,0 +1,52 @@
+@import '../../estilos.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg{
+    background-image: url('../img/registrarse.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-log{
+    position: absolute;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    top: 45%;
+    text-align: center;
+}
+.formulario_ingresar{
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+.mensaje{
+    color: #fff;
+    padding: 10px;
+    margin: -6px 0;
+    border-radius: 5px;
+    font-size: larger;
+}
+.btn_inicio:hover{
+    background: #fff;
+    color: #000;
+}
+.btn_ingresar:hover{
+    background: #fff;
+    color: #000;
+}
+

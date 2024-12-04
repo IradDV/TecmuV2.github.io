@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TECMU STORE</title>
+    <link rel="stylesheet" href="../productosGUI/css/producto.scss" />
+  </head>
+  <body>
+    <div class="bg">
+      <header>
+        <nav>
+          <button id="cerrar_sesion" class="btn btn_cerrar_sesion">Cerrar Sesion</button>
+          <button id="inicio" class="btn">Inicio</button>
+          <div class="div_filtrado">
+            <p>Filtra a tus necesidades!!</p>
+           
+            <form id="filtro_productos">
+              <label for="">CATEGORIA</label>
+              <select name="categoria" id="categoria">
+                <option value="">CUALQUIER CATEGORIA</option>
+                <option value="0">Tecnologia</option>
+                <option value="1">Hogar</option>
+                <option value="2">Deportes</option>
+                <option value="3">Ropa</option>
+                <option value="4">Juguetes</option>
+                <option value="5">Accesorios</option>
+              </select>
+              <label for="">PRECIO</label>
+              <select name="precio" id="precio">
+                <option value="">CUALQUIER PRECIO</option>
+                <option value="0-100">0-100</option>
+                <option value="100-500">100-500</option>
+                <option value="500-1000">500-1000</option>
+                <option value="1000-5000">1000-5000</option>
+                <option value="5000-10000">5000-10000</option>
+                <option value="10000-50000">10000-50000</option>
+              </select>
+              <button class="btn btn_prymary">Filtrar</button>
+            </form>
+          </div>
+        </nav>
+      </header>
+      <div class="contenedor" id="Contenedor_Producto">
+
+      </div>
+      <div id="formulario-calificacion" class="ocultar"></div>
+    </div>
+  </body>
+  <script src="../productosGUI/js/producto.js"></script>
+</html>

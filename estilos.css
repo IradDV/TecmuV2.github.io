@@ -1,0 +1,28 @@
+:root{
+    --color-hueso: #fdfde5;
+    --color-secundario: #063755;
+    --color-amarillo: #fac829;
+    --rojo: #fb5845;
+    --verde : #3baa35;
+}
+.btn{
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: var(--color-amarillo);
+    color: var(--color-secundario);
+    border: none;
+    cursor: pointer;
+}
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mostrar{
+    display: block;
+}
+.ocultar{
+    display: none;
+}
