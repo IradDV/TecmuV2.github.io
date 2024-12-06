@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Usuarios</title>
-    <style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    <style>
         table {
             width: 100%;
             border-collapse: collapse;
@@ -25,15 +26,16 @@
     </style>
 </head>
 <body>
-    <div class="tabla">
-        <table>
+    <h1>Tabla de Usuarios</h1>
+    <div class="tabla" style="width: 80%; margin: auto 50px;">
+        <table class="table table table-borderless">
             <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>Nombre</th>
-                    <th>Correo</th>
-                    <th>Teléfono</th>
-                    <th>Acciones</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Correo</th>
+                    <th scope="col">Teléfono</th>
+                    <th scope="col">Acciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -50,8 +52,8 @@
                                 <td class='editable' data-column='Correo'>{$row['Correo']}</td>
                                 <td class='editable' data-column='num_telefono'>{$row['num_telefono']}</td>
                                 <td>
-                                    <span class='edit' onclick='editUser({$row['id_usuario']})'>Editar</span> | 
-                                    <span class='delete' onclick='deleteUser({$row['id_usuario']})'>Eliminar</span>
+                                    <span class='edit btn btn-primary' style='color:white;' onclick='editUser({$row['id_usuario']})'>Editar</span> | 
+                                    <span class='delete btn btn-primary' style='color:white;' onclick='deleteUser({$row['id_usuario']})'>Eliminar</span>
                                 </td>
                             </tr>";
                     }
