@@ -30,7 +30,14 @@ fomulario_ingresar.addEventListener('submit', (e) => {
                 window.location.href = '../Interfaz/usuarioGUI/admin.php';
                 return;
             }
-            window.location.href = '../Interfaz/usuarioGUI/usuario.html';
+            if (data === 'visitante') {
+                window.location.href = '../Interfaz/productosGUI/visitante.html';
+                return;
+            }
+            if (data === 'exito') {
+                window.location.href = '../Interfaz/usuarioGUI/usuario.html';
+                return;
+            }
         })
         .catch(err => console.log(err));
 });

@@ -9,6 +9,10 @@ if ($correo === 'admin' && $contrasena === 'admin') {
     echo json_encode('admin');
     return;
 }
+if ($correo === 'visitante' && $contrasena === 'visitante') {
+    echo json_encode('visitante');
+    return;
+}
 
 $sql = "SELECT * FROM usuario WHERE correo = '$correo' AND contraseña = '$contrasena'";
 $result = $db->query($sql);
