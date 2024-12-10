@@ -2,7 +2,7 @@
  * @file scripIndex.js
  * @brief Archivo de inicialización de la página index.html
  * @version 1.0
- * @date 2021-06-07
+ * @date 2024-12-05
  * 
  */
 //declaramos variables para poder acceder a los botones de la página

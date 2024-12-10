@@ -14,7 +14,7 @@ fomulario_ingresar.addEventListener('submit', (e) => {
         correo: correo,
         password: password
     };
-    fetch('../login/php/ingresar.php', {
+    fetch('https://tecmuv2githubio-production.up.railway.app/login/php/ingresar.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
