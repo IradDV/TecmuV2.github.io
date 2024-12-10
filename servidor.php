@@ -1,11 +1,12 @@
 <?php
-$servername = "localhost";
+$servername = "autorack.proxy.rlwy.net";
 $username = "root";
-$password = "admin";
-$database = "tecmu";
+$password = "FhNmukQvdkJPxBGmpITWgjzxlvzkvJoA";
+$database = "railway";
+$port = 42132;
 
 // Establece la conexión a la base de datos
-$db = new mysqli($servername, $username, $password, $database);
+$db = new mysqli($servername, $username, $password, $database, $port);
 
 if ($db->connect_error) {
     die("La conexión a la base de datos falló: " . $conn->connect_error);
